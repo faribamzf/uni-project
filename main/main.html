@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <link rel="stylesheet" href="../style/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="nav-logo">
+                    Moon <i class="ri-moon-clear-line"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./main.html">خانه</a></li>
+                    <li><a href="./product.html">محصولات</a></li>
+                    <li><a href="#foot">ارتباط با ما</a></li>
+                </ul>
+                
+                <div class="icons">
+                    <div class="cart-icon" onclick="toggleCart()">
+                        <i class="ri-shopping-cart-line"></i>
+                        <span id="cart-count"></span>
+                    </div>
+                    <div class="cart-dropdown">
+                        <div class="cart-header">
+                            <h3>سبد خرید</h3>
+                            <button class="close-cart"
+                                onclick="toggleCart()">✖</button>
+                        </div>
+                        <ul id="cart-items" class="cart-items"></ul>
+                        <div class="cart-footer">
+                            <p>جمع کل: <span id="cart-total"></span>
+                                تومان</p>
+                            <button class="checkout-btn">پرداخت</button>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <section class="hero" >
+            <div class="hero-text">
+                <span class="moon-logo">Moon</span>
+                <h1>Be Your Best</h1>
+                <a href="./product.html"><button class="btn-primary">Shop Now</button></a>
+            </div>
+            <div class="hero-images">
+                <img src="../images/moon.jpg" alt="" />
+                
+            </div>
+        </section>
+
+        <section class="new-products">
+            <h2>محصولات</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/e4cd81a85059ca904e7057188e491a23.jpg" alt="adidas X Pop Polo shirt" />
+                    <div class="product-category">
+                        <p>کفش</p>
+                    </div>
+                </div>
+
+                <a href="#">
+                    <div class="product-card">
+                        <img src="../images/d10f9d68b47ed044a3d210a3b41c2c57.jpg" alt="adidas X Pop TRK Vintage" />
+                        <div class="product-category">
+                            <p>کیف</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="product-card">
+                    <img src="../images/d989cac706322f345fac13b5e37fb0da.jpg" alt="adidas X Pop Beckenbauer Track Jacket" />
+                    <div class="product-category">
+                        <p>اکسسوری</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/6964960fd6d8a473f4365d5548db0bf9.jpg" alt="adidas X Pop Beckenbauer Track Jacket" />
+                    <div class="product-category">
+                        <p>کت</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <footer id="foot">
+                <div class="footer-logo">
+                    <h1>MOON</h1>
+                </div>
+                <div class="footer-info">
+                    <span class="relation">راه های ارتباطی</span>
+                    <div class="phone">
+                        <p> 
+                        <i class="ri-phone-fill"></i>
+                        <span>09020001111</span>
+                        </p>
+                        <p> 
+                        <i class="ri-mail-line"></i>
+                        <span>shop@gmail.com</span>
+                        </p>
+                    </div>
+                </div>    
+            </footer>
+        </section>
+    </body>
+    <script src="../scipt/cart.js">
+    </script>
+
+</html>
